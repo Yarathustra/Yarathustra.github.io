@@ -9,51 +9,46 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 
 # Zhangrui Yang (杨章睿)
 
-**Undergraduate Researcher**  
+Undergraduate Researcher  
 Computer Science and Technology (Elite Program)  
-[Guohao College](https://gh.tongji.edu.cn/)  
-Tongji University  
+<a href="https://gh.tongji.edu.cn/">Guohao College</a>, Tongji University
 
-📧 jerry.zryang@hotmail.com  
-🌐 [GitHub](https://github.com/Yarathustra) · [Google Scholar](https://scholar.google.com/citations?user=1io0foEAAAAJ&hl=zh-CN)
+Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a>  
+<a href="https://github.com/Yarathustra">GitHub</a> / 
+<a href="https://scholar.google.com/citations?user=1io0foEAAAAJ">Google Scholar</a>
 
 </div>
 
 <div style="flex:0 0 180px;">
-<img src="assets/images/profile.jpg" alt="Zhangrui Yang" style="width:100%; border-radius:10px;">
+<img src="assets/images/profile.jpg" alt="Zhangrui Yang" style="width:100%; border-radius:8px;">
 </div>
 
 </div>
 
+---
 
 ## About
 
-I am an undergraduate researcher at **Tongji University** in the *Elite Program* of **Guohao College**.  
-My work focuses on **Vision-Language Models (VLMs)** and **spatial reasoning**.
+I am an undergraduate researcher in the **Elite Program** at Tongji University.  
+My research lies at the intersection of **vision-language models** and **spatial reasoning**.
 
-Current research explores how large multimodal models internalize **structured spatial knowledge** and whether their reasoning reflects genuine geometric understanding or dataset-level statistical shortcuts. My interests include the design of **spatial benchmarks**, **evaluation protocols**, and **training paradigms** that improve spatial reasoning robustness in multimodal systems.
+Recent large multimodal models demonstrate impressive visual reasoning performance, yet emerging evidence suggests that many spatial reasoning capabilities arise from dataset-level statistical regularities rather than structured geometric understanding. My work investigates how multimodal models represent spatial structure and how evaluation protocols can distinguish genuine spatial reasoning from shortcut learning.
 
-More broadly, I am interested in the intersection of:
-
-- Multimodal representation learning  
-- 3D spatial reasoning in foundation models  
-- Robust visual perception under distribution shift  
-- Machine learning systems for large-scale vision training
-
+More broadly, I am interested in multimodal representation learning, spatial intelligence in foundation models, and robust perception under distribution shift.
 
 ---
 
 ## Publications
 
-### Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training  
-**Zhangrui Yang***, Jiahao Jiang*, Xuanhan Wang, Jingkuan Song  
+**Jiahao Jiang***, **Zhangrui Yang***, Xuanhan Wang, Jingkuan Song  
+*Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training*  
 
-*CVPPA Workshop @ ICCV 2025*  
+CVPPA Workshop, ICCV 2025  
 
-[arXiv](https://arxiv.org/abs/2512.11874) · [Code](https://github.com/Yarathustra)
+<a href="https://arxiv.org/abs/2512.11874">arXiv</a> / 
+<a href="https://github.com/Yarathustra">Code</a>
 
-A two-stage pseudo-label distillation framework designed to improve segmentation robustness in low-resource agricultural scenarios. The method iteratively refines pseudo labels through a hybrid teacher–student training loop, significantly improving annotation quality and downstream segmentation performance.
-
+\* Equal contribution.
 
 ---
 
@@ -61,26 +56,21 @@ A two-stage pseudo-label distillation framework designed to improve segmentation
 
 ### Global Wheat Full Semantic Segmentation (GWFSS)
 
-**Global Rank #2**
+Global Rank #2
 
-Developed a pseudo-label refinement strategy for wheat head segmentation under limited annotation settings.
-
-Key contributions include:
-
-- designing an iterative pseudo-label distillation pipeline  
-- building the full training infrastructure and experimentation workflow  
-- conducting extensive ablation studies and hyperparameter optimization  
-
+Developed a pseudo-label refinement framework for wheat head segmentation under limited annotation settings. The work focuses on improving pseudo-label reliability through iterative teacher–student training and systematic ablation analysis.
 
 ---
 
 ## Selected Honors
 
-- **Global 2nd Place**, Global Wheat Full Semantic Segmentation Competition  
-- **National First Prize**, iCAN AI Innovation Competition (SurgeryMind Project)  
-- **Shanghai Second Prize**, National Mathematical Modeling Contest  
-- **Academic Scholarship**, Guohao College, Tongji University  
+Global 2nd Place — Global Wheat Full Semantic Segmentation Competition  
 
+National First Prize — iCAN AI Innovation Competition (SurgeryMind)  
+
+Shanghai Second Prize — National Mathematical Modeling Contest  
+
+Academic Scholarship — Guohao College, Tongji University
 
 ---
 
@@ -88,46 +78,38 @@ Key contributions include:
 
 ### SurgeryMind — Multimodal Surgical Assistant
 
-A multimodal surgical interaction system integrating **speech commands**, **gesture control**, and **visual interface orchestration**.
-
-The system implements a real-time control pipeline that enables surgeons to interact with medical imaging systems without manual input, reducing workflow interruption during procedures.
-
+Designed a multimodal surgical interaction system integrating speech recognition, gesture-based control, and web-based visualization. The system enables surgeons to interact with imaging systems through natural multimodal commands during operations.
 
 ---
 
 ## Technical Skills
 
-**Programming**
+Programming: Python, C++, Verilog HDL, SQL  
 
-Python · C++ · Verilog HDL · SQL
+Frameworks: PyTorch, HuggingFace, Detectron2, OpenCV  
 
-**Frameworks**
-
-PyTorch · HuggingFace · Detectron2 · OpenCV
-
-**Tools**
-
-Linux · Git · LaTeX
-
+Tools: Linux, Git, LaTeX
 
 ---
 
 ## Education
 
-**Tongji University**  
-B.S. Computer Science and Technology (Elite Program)  
+**Tongji University**
+
+B.S. in Computer Science and Technology (Elite Program)  
 2023 – 2027 (expected)
 
 Selected Coursework
 
-Mathematical Analysis · Linear Algebra · Probability & Statistics ·  
-Data Structures and Algorithms · Pattern Recognition · Database Systems
-
+Mathematical Analysis  
+Linear Algebra  
+Probability and Statistics  
+Data Structures and Algorithms  
+Pattern Recognition  
+Database Systems
 
 ---
 
 ## Contact
 
-I am always open to **research collaboration** and **academic discussion**.
-
-Email: jerry.zryang@hotmail.com
+Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a>
