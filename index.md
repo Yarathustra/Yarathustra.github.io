@@ -6,25 +6,29 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 <div style="display:flex; align-items:flex-start; gap:36px; margin-bottom:40px;">
 
 <div style="flex:1;">
+<table>
+<tr>
 
-## Zhangrui Yang (杨章睿)
+<td width="70%">
 
-Undergraduate Researcher  
-Computer Science and Technology (Elite Program)  
-<a href="https://ghc.tongji.edu.cn/">Guohao College</a>, Tongji University
+<h2>Zhangrui Yang (杨章睿)</h2>
 
-Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a>  
-<a href="https://github.com/Yarathustra">GitHub</a> / 
+Undergraduate Researcher<br>
+Computer Science and Technology (Elite Program)<br>
+<a href="https://ghc.tongji.edu.cn/">Guohao College</a>, Tongji University<br><br>
+
+Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a><br>
+<a href="https://github.com/Yarathustra">GitHub</a> /
 <a href="https://scholar.google.com/citations?user=1io0foEAAAAJ">Google Scholar</a>
 
-</div>
+</td>
 
-<div style="flex:0 0 180px;">
-<img src="assets/images/profile.jpg" alt="Zhangrui Yang" style="width:100%; border-radius:8px;">
-</div>
+<td width="30%">
+<img src="assets/images/profile.jpg" width="180" style="border-radius:8px;">
+</td>
 
-</div>
-
+</tr>
+</table>
 ---
 
 ## About
