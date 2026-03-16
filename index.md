@@ -7,11 +7,11 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 
 <div style="flex:1;">
 
-# Zhangrui Yang (杨章睿)
+## Zhangrui Yang (杨章睿)
 
 Undergraduate Researcher  
 Computer Science and Technology (Elite Program)  
-<a href="https://gh.tongji.edu.cn/">Guohao College</a>, Tongji University
+<a href="https://ghc.tongji.edu.cn/">Guohao College</a>, Tongji University
 
 Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a>  
 <a href="https://github.com/Yarathustra">GitHub</a> / 
@@ -45,8 +45,7 @@ More broadly, I am interested in multimodal representation learning, spatial int
 
 CVPPA Workshop, ICCV 2025  
 
-<a href="https://arxiv.org/abs/2512.11874">arXiv</a> / 
-<a href="https://github.com/Yarathustra">Code</a>
+<a href="https://arxiv.org/abs/2512.11874">arXiv</a> 
 
 \* Equal contribution.
 
@@ -86,7 +85,7 @@ Designed a multimodal surgical interaction system integrating speech recognition
 
 Programming: Python, C++, Verilog HDL, SQL  
 
-Frameworks: PyTorch, HuggingFace, Detectron2, OpenCV  
+Frameworks: PyTorch
 
 Tools: Linux, Git, LaTeX
 
