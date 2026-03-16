@@ -5,7 +5,7 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 
 <div style="display:flex; align-items:flex-start; gap:36px; margin-bottom:40px;">
 
-<div style="flex:1;">
+<div style="flex:1;" markdown="1">
 <table>
 <tr>
 
