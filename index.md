@@ -44,14 +44,17 @@ More broadly, I am interested in multimodal representation learning, spatial int
 
 ## Publications
 
+
+*Enhancing Adversarial Attacks with Decision Boundary Information* **Under Review**
 **Zhangrui Yang**, Shengming Yuan, Bo Wang, Yaya Cheng, Pengpeng Zeng, Zheng Wang, Xuanhan Wang, Jingkuan Song  
 
-*Enhancing Adversarial Attacks with Decision Boundary Information* **Under Review**, *Information Fusion*, 2026  
+*Information Fusion*, 2026  
 
 <a href="https://github.com/Yarathustra/BF-Attack">Code</a> 
 
-**Jiahao Jiang***, **Zhangrui Yang***, Xuanhan Wang, Jingkuan Song  
+
 *Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training*  
+**Jiahao Jiang***, **Zhangrui Yang***, Xuanhan Wang, Jingkuan Song  
 
 CVPPA Workshop, ICCV 2025  
 
