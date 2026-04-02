@@ -30,15 +30,88 @@ Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a><br
 </tr>
 </table>
 ---
+<style>
+  /* 基础样式与字体 */
+  :root {
+    --primary-color: #2c3e50;
+    --accent-color: #007bff;
+    --text-muted: #666;
+    --bg-light: #f8f9fa;
+    --border-color: #e9ecef;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
 
-## About
+  h2 {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-top: 40px;
+    font-weight: 700;
+  }
 
-I am an undergraduate researcher in the **Elite Program** at Tongji University.  
-My research lies at the intersection of **vision-language models** and **spatial reasoning**.
+  /* About 部分强化 */
+  .intro-text { font-size: 1.1em; color: #34495e; }
+  .highlight { color: var(--accent-color); font-weight: 600; }
 
-Recent large multimodal models demonstrate impressive visual reasoning performance, yet emerging evidence suggests that many spatial reasoning capabilities arise from dataset-level statistical regularities rather than structured geometric understanding. My work investigates how multimodal models represent spatial structure and how evaluation protocols can distinguish genuine spatial reasoning from shortcut learning.
+  /* 卡片式容器 */
+  .card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  .card:hover { transform: translateY(-2px); border-color: #ccc; }
 
-More broadly, I am interested in multimodal representation learning, spatial intelligence in foundation models, and robust perception under distribution shift.
+  .card-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .card-title { font-weight: bold; font-size: 1.1em; }
+  .card-date { color: var(--text-muted); font-size: 0.9em; }
+
+  /* 标签/勋章样式 */
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 0.85em;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .badge-rank { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; font-weight: 600; }
+  .badge-skill { background: #eef2f7; color: #495057; border: 1px solid #d1d9e6; }
+  .badge-honor { background: #d4edda; color: #155724; }
+
+  /* 列表样式优化 */
+  .honor-list { list-style: none; padding-left: 0; }
+  .honor-item { margin-bottom: 10px; display: flex; align-items: center; }
+  .honor-item::before { content: "🏆"; margin-right: 10px; }
+
+  /* 课程列表展示 */
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .course-item { font-size: 0.9em; color: #555; }
+</style>
+
+<section>
+  <h2>About</h2>
+  <p class="intro-text">
+    I am an undergraduate researcher in the <span class="highlight">Elite Program</span> at Tongji University. 
+    My research lies at the intersection of <span class="highlight">vision-language models</span> and <span class="highlight">spatial reasoning</span>.
+  </p>
+  <p>
+    Recent large multimodal models demonstrate impressive visual reasoning performance, yet emerging evidence suggests that many spatial reasoning capabilities arise from dataset-level statistical regularities rather than structured geometric understanding. My work investigates how multimodal models represent spatial structure and how evaluation protocols can distinguish genuine spatial reasoning from shortcut learning.
+  </p>
+</section>
 
 ---
 
@@ -83,64 +156,75 @@ More broadly, I am interested in multimodal representation learning, spatial int
 <p style="font-size: 0.8em; color: #888;">* Equal contribution.</p>
 ---
 
-## Research Experience
+<section>
+  <h2>Research Experience</h2>
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Global Wheat Full Semantic Segmentation (GWFSS)</span>
+      <span class="badge badge-rank">Global Rank #2</span>
+    </div>
+    <p style="margin: 10px 0 0 0; color: #555;">
+      Developed a pseudo-label refinement framework for wheat head segmentation under limited annotation settings. The work focuses on improving pseudo-label reliability through iterative teacher–student training and systematic ablation analysis.
+    </p>
+  </div>
+</section>
+<section>
+  <h2>Selected Honors</h2>
+  <ul class="honor-list">
+    <li class="honor-item">Global 2nd Place — Global Wheat Full Semantic Segmentation Competition</li>
+    <li class="honor-item">National First Prize — iCAN AI Innovation Competition (SurgeryMind)</li>
+    <li class="honor-item">Shanghai Second Prize — National Mathematical Modeling Contest</li>
+    <li class="honor-item">Academic Scholarship — Guohao College, Tongji University</li>
+  </ul>
+</section>
 
-### Global Wheat Full Semantic Segmentation (GWFSS)
+<section>
+  <h2>Selected Projects</h2>
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">SurgeryMind — Multimodal Surgical Assistant</span>
+    </div>
+    <p style="margin: 10px 0 0 0; color: #555;">
+      Designed a multimodal surgical interaction system integrating speech recognition, gesture-based control, and web-based visualization. The system enables surgeons to interact with imaging systems through natural multimodal commands during operations.
+    </p>
+  </div>
+</section>
 
-Global Rank #2
+<section>
+  <h2>Technical Skills</h2>
+  <div style="margin-bottom: 10px;">
+    <strong>Programming:</strong> 
+    <span class="badge badge-skill">Python</span> <span class="badge badge-skill">C++</span> <span class="badge badge-skill">Verilog HDL</span> <span class="badge badge-skill">SQL</span>
+  </div>
+  <div style="margin-bottom: 10px;">
+    <strong>Frameworks:</strong> <span class="badge badge-skill">PyTorch</span>
+  </div>
+  <div>
+    <strong>Tools:</strong> <span class="badge badge-skill">Linux</span> <span class="badge badge-skill">Git</span> <span class="badge badge-skill">LaTeX</span>
+  </div>
+</section>
 
-Developed a pseudo-label refinement framework for wheat head segmentation under limited annotation settings. The work focuses on improving pseudo-label reliability through iterative teacher–student training and systematic ablation analysis.
+<section>
+  <h2>Education</h2>
+  <div class="card" style="border: none; background: var(--bg-light);">
+    <div class="card-header">
+      <span class="card-title">Tongji University</span>
+      <span class="card-date">2023 – 2027 (Expected)</span>
+    </div>
+    <div>B.S. in Computer Science and Technology (Elite Program)</div>
+    <div style="margin-top: 15px; font-weight: 600; font-size: 0.9em;">Selected Coursework:</div>
+    <div class="course-grid">
+      <div class="course-item">• Mathematical Analysis</div>
+      <div class="course-item">• Linear Algebra</div>
+      <div class="course-item">• Probability & Statistics</div>
+      <div class="course-item">• Data Structures & Algorithms</div>
+      <div class="course-item">• Pattern Recognition</div>
+      <div class="course-item">• Database Systems</div>
+    </div>
+  </div>
+</section>
 
----
-
-## Selected Honors
-
-Global 2nd Place — Global Wheat Full Semantic Segmentation Competition  
-
-National First Prize — iCAN AI Innovation Competition (SurgeryMind)  
-
-Shanghai Second Prize — National Mathematical Modeling Contest  
-
-Academic Scholarship — Guohao College, Tongji University
-
----
-
-## Selected Projects
-
-### SurgeryMind — Multimodal Surgical Assistant
-
-Designed a multimodal surgical interaction system integrating speech recognition, gesture-based control, and web-based visualization. The system enables surgeons to interact with imaging systems through natural multimodal commands during operations.
-
----
-
-## Technical Skills
-
-Programming: Python, C++, Verilog HDL, SQL  
-
-Frameworks: PyTorch
-
-Tools: Linux, Git, LaTeX
-
----
-
-## Education
-
-**Tongji University**
-
-B.S. in Computer Science and Technology (Elite Program)  
-2023 – 2027 (expected)
-
-Selected Coursework
-
-Mathematical Analysis  
-Linear Algebra  
-Probability and Statistics  
-Data Structures and Algorithms  
-Pattern Recognition  
-Database Systems
-
----
-
-## Contact
-
-Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a>
+<section>
+  <h2>Contact</h2>
+  <p>📧 Email: <a href="mailto:jerry.zryang@hotmail.com" style="color: var(--accent-color); text-decoration: none;">jerry.zryang@hotmail.com</a></p>
+</section>
