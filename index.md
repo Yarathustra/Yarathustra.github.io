@@ -4,191 +4,193 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 ---
 
 <style>
-  /* 1. 样式隔离：仅作用于此 ID 内部，不干扰主题侧边栏 */
-  #academic-page-container {
-    color: #2c3e50;
+  /* 1. 兼容性变量：仅作用于我们自己的元素 */
+  #academic-profile {
+    --primary: #2c3e50;
+    --accent: #007bff;
+    --border: #e9ecef;
+    --text-m: #666;
+    color: var(--primary);
     line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   }
 
-  /* 2. 头部区域：使用浮动布局（最稳健，防止重叠） */
-  .profile-header-area {
+  /* 2. 修复重叠：给内容区顶部留出呼吸空间 */
+  .profile-container {
+    padding-top: 20px;
+    display: block; /* 弃用 flex 以防主题干扰 */
+    overflow: hidden;
+  }
+
+  /* 3. 个人简介：改用更稳健的浮动或响应式网格 */
+  .header-box {
     margin-bottom: 30px;
-    overflow: hidden; /* 清除浮动 */
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
   }
 
-  .profile-img {
+  .profile-pic {
     float: right;
-    width: 160px;
+    width: 150px;
     border-radius: 8px;
     margin-left: 20px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
-  /* 3. 章节标题样式 */
-  #academic-page-container h2 {
-    border-bottom: 2px solid #e9ecef;
-    padding-bottom: 8px;
-    margin-top: 45px !important;
-    font-weight: 700;
-    color: #1a2a3a;
-    clear: both; /* 确保不被头像遮挡 */
+  @media (max-width: 600px) {
+    .profile-pic { float: none; display: block; margin: 0 auto 20px; }
   }
 
-  /* 4. 卡片式容器（经验、项目、教育） */
-  .styled-card {
-    border: 1px solid #e9ecef;
+  /* 4. 章节标题优化：避开主题自带样式的重叠 */
+  #academic-profile h2 {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 5px;
+    margin-top: 40px !important; /* 强制间距 */
+    color: var(--primary);
+    clear: both; /* 确保不被浮动图片遮挡 */
+  }
+
+  /* 5. 卡片系统 */
+  .pub-card {
+    border-left: 4px solid var(--border);
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    background: #fcfcfc;
+  }
+
+  .exp-card {
+    border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 18px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
     background: #fff;
   }
 
-  /* 5. 论文项样式 */
-  .pub-entry { margin-bottom: 25px; }
-  .pub-title { font-weight: bold; font-size: 1.1em; color: #1a2a3a; display: block; }
-  .status-tag { color: #e67e22; font-weight: bold; font-size: 0.85em; margin-left: 5px; }
-
-  /* 6. 标签/勋章样式 */
-  .jerry-badge {
-    display: inline-block;
+  .badge-row { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+  
+  .pill {
     padding: 2px 10px;
     font-size: 0.8em;
     border-radius: 4px;
     text-decoration: none !important;
-    margin-top: 6px;
-    margin-right: 6px;
+    display: inline-block;
   }
-  .bg-black { background: #24292e; color: #fff !important; }
-  .bg-red { background: #B31B1B; color: #fff !important; }
-  .bg-gold { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; font-weight: bold; border-radius: 20px; }
-  .bg-skill { background: #f0f2f5; color: #495057; border: 1px solid #d1d9e6; }
+  .pill-blue { background: var(--accent); color: white !important; }
+  .pill-red { background: #B31B1B; color: white !important; }
+  .pill-gray { background: #24292e; color: white !important; }
+  .pill-yellow { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+  .pill-skill { background: #f0f2f5; color: #495057; border: 1px solid #d1d9e6; margin-right: 5px; }
 
-  /* 7. 课程网格布局 */
+  /* 6. 课程表 */
   .course-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 8px;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
+    list-style: none;
+    padding: 0;
   }
+  .course-list li::before { content: "• "; color: var(--accent); }
 </style>
 
-<div id="academic-page-container">
+<div id="academic-profile">
 
-  <div class="profile-header-area">
-    <img src="assets/images/profile.jpg" class="profile-img">
-    <h2 style="border:none; margin-top:0 !important; padding:0;">Zhangrui Yang (杨章睿)</h2>
-    <p>
-      Undergraduate Researcher<br>
-      Computer Science and Technology (Elite Program)<br>
-      <a href="https://ghc.tongji.edu.cn/">Guohao College</a>, Tongji University
-    </p>
-    <p>
-      Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a><br>
-      <a href="https://github.com/Yarathustra">GitHub</a> /
-      <a href="https://scholar.google.com/citations?user=1io0foEAAAAJ">Google Scholar</a>
-    </p>
+  <div class="profile-container">
+    <img src="assets/images/profile.jpg" class="profile-pic">
+    <div class="header-box">
+      <h1 style="margin-top:0;">Zhangrui Yang (杨章睿)</h1>
+      <p>
+        Undergraduate Researcher<br>
+        Computer Science and Technology (Elite Program)<br>
+        <a href="https://ghc.tongji.edu.cn/">Guohao College</a>, Tongji University
+      </p>
+      <p style="margin-top: 10px;">
+        <a href="mailto:jerry.zryang@hotmail.com">📧 Email</a> | 
+        <a href="https://github.com/Yarathustra">🐙 GitHub</a> | 
+        <a href="https://scholar.google.com/citations?user=1io0foEAAAAJ">🎓 Scholar</a>
+      </p>
+    </div>
   </div>
 
   <section>
     <h2>About</h2>
-    <p style="font-size: 1.1em; color: #34495e;">
-      I am an undergraduate researcher in the <strong>Elite Program</strong> at Tongji University. My research lies at the intersection of <strong>vision-language models</strong> and <strong>spatial reasoning</strong>.
+    <p style="font-size: 1.1em; color: #34495e; font-weight: 500;">
+      I am an undergraduate researcher in the <span style="color:var(--accent)">Elite Program</span> at Tongji University. 
+      My research lies at the intersection of <span style="color:var(--accent)">vision-language models</span> and <span style="color:var(--accent)">spatial reasoning</span>.
     </p>
     <p>
-      Recent large multimodal models demonstrate impressive visual reasoning performance, yet emerging evidence suggests that many spatial reasoning capabilities arise from dataset-level statistical regularities rather than structured geometric understanding. My work investigates how multimodal models represent spatial structure and how evaluation protocols can distinguish genuine spatial reasoning from shortcut learning.
-    </p>
-    <p>
-      More broadly, I am interested in multimodal representation learning, spatial intelligence in foundation models, and robust perception under distribution shift.
+      My work investigates how multimodal models represent spatial structure and how evaluation protocols can distinguish genuine spatial reasoning from shortcut learning.
     </p>
   </section>
 
   <section>
     <h2>Publications</h2>
-    <div class="pub-entry">
-      <span class="pub-title">Enhancing Adversarial Attacks with Decision Boundary Information <span class="status-tag">Under Review</span></span>
-      <span><strong>Zhangrui Yang</strong>, Shengming Yuan, Bo Wang, Yaya Cheng, Pengpeng Zeng, Zheng Wang, Xuanhan Wang, Jingkuan Song</span><br>
-      <span style="font-style:italic; color:#666;">Information Fusion, 2026</span><br>
-      <a href="https://github.com/Yarathustra/BF-Attack" class="jerry-badge bg-black">Code</a>
+    
+    <div class="pub-card">
+      <strong style="display:block; font-size:1.1em;">Enhancing Adversarial Attacks with Decision Boundary Information</strong>
+      <span style="color:#555"><strong>Zhangrui Yang</strong>, Shengming Yuan, Bo Wang, et al.</span><br>
+      <span style="font-style:italic">Information Fusion, 2026</span> <span style="color:#e67e22; font-weight:bold; font-size:0.9em;">[Under Review]</span><br>
+      <div class="badge-row">
+        <a href="https://github.com/Yarathustra/BF-Attack" class="pill pill-gray">Code</a>
+      </div>
     </div>
 
-    <div class="pub-entry">
-      <span class="pub-title">Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training</span>
-      <span>Jiahao Jiang*, <strong>Zhangrui Yang</strong>*, Xuanhan Wang, Jingkuan Song</span><br>
-      <span style="font-style:italic; color:#666;">CVPPA Workshop, ICCV 2025</span><br>
-      <a href="https://arxiv.org/abs/2512.11874" class="jerry-badge bg-red">arXiv</a>
+    <div class="pub-card">
+      <strong style="display:block; font-size:1.1em;">Pseudo-Label Refinement for Robust Wheat Head Segmentation</strong>
+      <span style="color:#555">Jiahao Jiang*, <strong>Zhangrui Yang</strong>*, Xuanhan Wang, Jingkuan Song</span><br>
+      <span style="font-style:italic">CVPPA Workshop, ICCV 2025</span><br>
+      <div class="badge-row">
+        <a href="https://arxiv.org/abs/2512.11874" class="pill pill-red">arXiv</a>
+      </div>
     </div>
-    <small style="color:#888;">* Equal contribution.</small>
+    <small>* Equal contribution</small>
   </section>
 
   <section>
     <h2>Research Experience</h2>
-    <div class="styled-card">
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
-        <strong>Global Wheat Full Semantic Segmentation (GWFSS)</strong>
-        <span class="jerry-badge bg-gold">Global Rank #2</span>
+    <div class="exp-card">
+      <div style="display:flex; justify-content:space-between; align-items: center;">
+        <strong>Global Wheat Full Semantic Segmentation</strong>
+        <span class="pill pill-yellow">Global Rank #2</span>
       </div>
-      <p style="margin-top:10px; font-size:0.95em; color:#555;">
-        Developed a pseudo-label refinement framework for wheat head segmentation under limited annotation settings. The work focuses on improving pseudo-label reliability through iterative teacher–student training and systematic ablation analysis.
+      <p style="margin-top:8px; font-size:0.95em; color:#555;">
+        Developed a pseudo-label refinement framework for wheat head segmentation, focusing on iterative teacher-student training.
       </p>
     </div>
   </section>
 
   <section>
     <h2>Selected Honors</h2>
-    <ul style="list-style:none; padding:0;">
-      <li style="margin-bottom:8px;">🏆 Global 2nd Place — Global Wheat Full Semantic Segmentation Competition</li>
-      <li style="margin-bottom:8px;">🏆 National First Prize — iCAN AI Innovation Competition (SurgeryMind)</li>
-      <li style="margin-bottom:8px;">🏆 Shanghai Second Prize — National Mathematical Modeling Contest</li>
-      <li style="margin-bottom:8px;">🏆 Academic Scholarship — Guohao College, Tongji University</li>
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin-bottom:8px;">🏆 Global 2nd Place — Global Wheat Segmentation Competition</li>
+      <li style="margin-bottom:8px;">🏆 National First Prize — iCAN AI Innovation Competition</li>
+      <li style="margin-bottom:8px;">🏆 Shanghai Second Prize — National Math Modeling Contest</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Selected Projects</h2>
-    <div class="styled-card">
-      <strong>SurgeryMind — Multimodal Surgical Assistant</strong>
-      <p style="margin-top:10px; font-size:0.95em; color:#555;">
-        Designed a multimodal surgical interaction system integrating speech recognition, gesture-based control, and web-based visualization. The system enables surgeons to interact with imaging systems through natural multimodal commands during operations.
-      </p>
-    </div>
   </section>
 
   <section>
     <h2>Technical Skills</h2>
     <p>
-      <strong>Programming:</strong> <span class="jerry-badge bg-skill">Python</span> <span class="jerry-badge bg-skill">C++</span> <span class="jerry-badge bg-skill">Verilog HDL</span> <span class="jerry-badge bg-skill">SQL</span><br>
-      <strong>Frameworks:</strong> <span class="jerry-badge bg-skill">PyTorch</span><br>
-      <strong>Tools:</strong> <span class="jerry-badge bg-skill">Linux</span> <span class="jerry-badge bg-skill">Git</span> <span class="jerry-badge bg-skill">LaTeX</span>
+      <strong>Programming:</strong> <span class="pill pill-skill">Python</span> <span class="pill pill-skill">C++</span> <span class="pill pill-skill">PyTorch</span><br>
+      <strong>Tools:</strong> <span class="pill pill-skill">Linux</span> <span class="pill pill-skill">Git</span> <span class="pill pill-skill">LaTeX</span>
     </p>
   </section>
 
   <section>
     <h2>Education</h2>
-    <div class="styled-card" style="background:#fcfcfc;">
-      <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+      <div style="display:flex; justify-content:space-between;">
         <strong>Tongji University</strong>
-        <span style="color:#666;">2023 – 2027 (expected)</span>
+        <span style="color:#666">2023 – 2027</span>
       </div>
       <div>B.S. in Computer Science and Technology (Elite Program)</div>
-      <div style="margin-top:15px; font-weight:600; font-size:0.9em; border-top:1px solid #eee; padding-top:10px;">Selected Coursework:</div>
-      <div class="course-list">
-        <div style="font-size:0.85em;">• Mathematical Analysis</div>
-        <div style="font-size:0.85em;">• Linear Algebra</div>
-        <div style="font-size:0.85em;">• Probability & Statistics</div>
-        <div style="font-size:0.85em;">• Data Structures & Algorithms</div>
-        <div style="font-size:0.85em;">• Pattern Recognition</div>
-        <div style="font-size:0.85em;">• Database Systems</div>
-      </div>
+      <p style="margin-top:10px; font-weight:600; font-size:0.9em; border-top:1px solid #ddd; padding-top:10px;">Selected Coursework:</p>
+      <ul class="course-list">
+        <li>Mathematical Analysis</li>
+        <li>Data Structures</li>
+        <li>Pattern Recognition</li>
+        <li>Probability & Statistics</li>
+      </ul>
     </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:jerry.zryang@hotmail.com">jerry.zryang@hotmail.com</a></p>
   </section>
 
 </div>
