@@ -127,7 +127,7 @@ title: Zhangrui Yang (杨章睿) | Tongji University
     
     <div class="pub-card">
       <strong style="display:block; font-size:1.1em;">Enhancing Adversarial Attacks with Decision Boundary Information</strong>
-      <span style="color:#555"><strong>Zhangrui Yang</strong>, Shengming Yuan, Bo Wang, et al.</span><br>
+      <span style="color:#555"><strong>Zhangrui Yang</strong>, Shengming Yuan, Bo Wang, Yaya Cheng, Pengpeng Zeng, Zheng Wang, Xuanhan Wang, Jingkuan Song</span><br>
       <span style="font-style:italic">Information Fusion, 2026</span> <span style="color:#e67e22; font-weight:bold; font-size:0.9em;">[Under Review]</span><br>
       <div class="badge-row">
         <a href="https://github.com/Yarathustra/BF-Attack" class="pill pill-gray">Code</a>
@@ -160,18 +160,20 @@ title: Zhangrui Yang (杨章睿) | Tongji University
 
   <section>
     <h2>Selected Honors</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li style="margin-bottom:8px;">🏆 Global 2nd Place — Global Wheat Segmentation Competition</li>
-      <li style="margin-bottom:8px;">🏆 National First Prize — iCAN AI Innovation Competition</li>
-      <li style="margin-bottom:8px;">🏆 Shanghai Second Prize — National Math Modeling Contest</li>
+    <ul style="list-style:none; padding:0;">
+      <li style="margin-bottom:8px;">🏆 Global 2nd Place — Global Wheat Full Semantic Segmentation Competition</li>
+      <li style="margin-bottom:8px;">🏆 National First Prize — iCAN AI Innovation Competition (SurgeryMind)</li>
+      <li style="margin-bottom:8px;">🏆 Shanghai Second Prize — National Mathematical Modeling Contest</li>
+      <li style="margin-bottom:8px;">🏆 Academic Scholarship — Guohao College, Tongji University</li>
     </ul>
   </section>
 
   <section>
     <h2>Technical Skills</h2>
     <p>
-      <strong>Programming:</strong> <span class="pill pill-skill">Python</span> <span class="pill pill-skill">C++</span> <span class="pill pill-skill">PyTorch</span><br>
-      <strong>Tools:</strong> <span class="pill pill-skill">Linux</span> <span class="pill pill-skill">Git</span> <span class="pill pill-skill">LaTeX</span>
+      <strong>Programming:</strong> <span class="jerry-badge bg-skill">Python</span> <span class="jerry-badge bg-skill">C++</span> <span class="jerry-badge bg-skill">Verilog HDL</span> <span class="jerry-badge bg-skill">SQL</span><br>
+      <strong>Frameworks:</strong> <span class="jerry-badge bg-skill">PyTorch</span><br>
+      <strong>Tools:</strong> <span class="jerry-badge bg-skill">Linux</span> <span class="jerry-badge bg-skill">Git</span> <span class="jerry-badge bg-skill">LaTeX</span>
     </p>
   </section>
 
