@@ -42,26 +42,45 @@ More broadly, I am interested in multimodal representation learning, spatial int
 
 ---
 
-## Publications
+<style>
+  .pub-item { margin-bottom: 25px; line-height: 1.6; }
+  .pub-title { font-weight: bold; font-size: 1.1em; color: #2c3e50; display: block; }
+  .pub-authors { color: #555; }
+  .pub-venue { font-style: italic; color: #444; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+  .badge:hover { background-color: #0056b3; }
+  .badge-arxiv { background-color: #B31B1B; } /* arXiv 红色 */
+  .badge-code { background-color: #24292e; }  /* GitHub 黑色 */
+  .under-review { color: #e67e22; font-weight: bold; font-size: 0.9em; }
+</style>
 
+<h2>Publications</h2>
 
-*Enhancing Adversarial Attacks with Decision Boundary Information* **Under Review**
-**Zhangrui Yang**, Shengming Yuan, Bo Wang, Yaya Cheng, Pengpeng Zeng, Zheng Wang, Xuanhan Wang, Jingkuan Song  
+<div class="pub-item">
+  <span class="pub-title">Enhancing Adversarial Attacks with Decision Boundary Information</span>
+  <span class="pub-authors"><strong>Zhangrui Yang</strong>, Shengming Yuan, Bo Wang, Yaya Cheng, Pengpeng Zeng, Zheng Wang, Xuanhan Wang, Jingkuan Song</span><br>
+  <span class="pub-venue">Information Fusion, 2026</span> <span class="under-review">[Under Review]</span><br>
+  <a href="https://github.com/Yarathustra/BF-Attack" class="badge badge-code">Code</a>
+</div>
 
-*Information Fusion*, 2026  
+<div class="pub-item">
+  <span class="pub-title">Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training</span>
+  <span class="pub-authors">Jiahao Jiang*, <strong>Zhangrui Yang</strong>*, Xuanhan Wang, Jingkuan Song</span><br>
+  <span class="pub-venue">CVPPA Workshop, ICCV 2025</span><br>
+  <a href="https://arxiv.org/abs/2512.11874" class="badge badge-arxiv">arXiv</a>
+</div>
 
-<a href="https://github.com/Yarathustra/BF-Attack">Code</a> 
-
-
-*Pseudo-Label Refinement for Robust Wheat Head Segmentation via Two-Stage Hybrid Training*  
-**Jiahao Jiang***, **Zhangrui Yang***, Xuanhan Wang, Jingkuan Song  
-
-CVPPA Workshop, ICCV 2025  
-
-<a href="https://arxiv.org/abs/2512.11874">arXiv</a> 
-
-\* Equal contribution.
-
+<p style="font-size: 0.8em; color: #888;">* Equal contribution.</p>
 ---
 
 ## Research Experience
