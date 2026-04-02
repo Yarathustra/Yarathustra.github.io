@@ -188,9 +188,11 @@ title: Zhangrui Yang (杨章睿) | Tongji University
       <p style="margin-top:10px; font-weight:600; font-size:0.9em; border-top:1px solid #ddd; padding-top:10px;">Selected Coursework:</p>
       <ul class="course-list">
         <li>Mathematical Analysis</li>
-        <li>Data Structures</li>
+        <li>Data Structures & Algorithms</li>
         <li>Pattern Recognition</li>
         <li>Probability & Statistics</li>
+        <li>Linear Algebra</li>
+        <li>Database Systems</li>
       </ul>
     </div>
   </section>
